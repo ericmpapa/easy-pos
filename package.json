@@ -1,0 +1,28 @@
+{
+  "name": "easy-pos",
+  "version": "1.0.0",
+  "description": "\"Easy POS\"",
+  "main": "app.js",
+  "scripts": {
+    "build": "babel jsx --out-dir js --presets react-app/prod",
+    "dev": "babel --watch jsx --out-dir js --presets react-app/prod",
+    "test": "node test.js",
+    "start": "electron .",
+    "debug": "electron --inspect=5858 ."
+  },
+  "keywords": [
+    "POS",
+    "Sales"
+  ],
+  "author": "Eric Mpapa",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2",
+    "electron": "^21.2.1"
+  },
+  "dependencies": {
+    "electron-print-dialog": "^0.1.0-alpha.1",
+    "sqlite3": "^5.1.2"
+  }
+}

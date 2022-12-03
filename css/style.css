@@ -1,0 +1,212 @@
+@font-face {
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url('../webfonts/Barlow/Barlow-Thin.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: Barlow;
+    font-style: italic;
+    font-weight: 100;
+    font-display: swap;
+    src: url('../webfonts/Barlow/Barlow-ThinItalic.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url('../webfonts/Barlow/Barlow-ExtraLight.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: Barlow;
+    font-style: italic;
+    font-weight: 200;
+    font-display: swap;
+    src: url('../webfonts/Barlow/Barlow-ExtraLightItalic.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('../webfonts/Barlow/Barlow-Light.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: Barlow;
+    font-style: italic;
+    font-weight: 300;
+    font-display: swap;
+    src: url('../webfonts/Barlow/Barlow-LightItalic.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../webfonts/Barlow/Barlow-Regular.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: Barlow;
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../webfonts/Barlow/Barlow-Italic.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('../webfonts/Barlow/Barlow-Medium.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: Barlow;
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src: url('../webfonts/Barlow/Barlow-MediumItalic.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('../webfonts/Barlow/Barlow-SemiBold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: Barlow;
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../webfonts/Barlow/Barlow-SemiBoldItalic.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../webfonts/Barlow/Barlow-Bold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: Barlow;
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../webfonts/Barlow/Barlow-Bold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('../webfonts/Barlow/Barlow-ExtraBold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: Barlow;
+    font-style: italic;
+    font-weight: 800;
+    font-display: swap;
+    src: url('../webfonts/Barlow/Barlow-ExtraBoldItalic.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('../webfonts/Barlow/Barlow-Black.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: Barlow;
+    font-style: italic;
+    font-weight: 900;
+    font-display: swap;
+    src: url('../webfonts/Barlow/Barlow-BlackItalic.ttf') format('truetype')
+}
+
+body{
+    font-family:  'Barlow', sans-serif;
+}
+
+a {
+    color: #343a40;
+}
+
+a.nav-link {
+    color: black;
+}
+
+a.nav-link.active{
+    color:white !important; 
+    background-color: black !important;
+}
+
+table.table-print-dashed td,table.table-print-dashed th{
+    border:none;   
+    border-top:1px dashed black;
+    border-bottom:1px dashed black;    
+}
+
+table.table-print td,table.table-print th{
+    border:none;   
+    border-top:1px solid black;
+    border-bottom:1px solid black; 
+    padding: 0.2em;    
+}
+
+table.table-print-dashed td,table.table-print-dashed th{
+    border:none;   
+    border-top:1px dashed black;
+    border-bottom:1px dashed black;   
+}
+
+.print-ui{
+    display: none;
+}
+
+.default-ui{
+    display: block;
+}
+
+.btn-default{
+    background-color:#ffca60 !important;  
+}
+
+@media print {
+    @page {
+        size: auto;
+    }
+    .page {
+        page-break-after: always;
+        page-break-inside: avoid;
+    }
+    .print-ui{
+        display: block;
+    }
+
+    .print-ui.p-none{
+        display: none !important;
+    }
+
+    .default-ui{
+        display: none;
+    }
+}
